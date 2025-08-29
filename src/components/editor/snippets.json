@@ -1,0 +1,293 @@
+[
+    {
+        "prefix": "!",
+        "body": [
+            "<!DOCTYPE html>",
+            "<html lang=\"pt-br\">",
+            "<head>",
+            "  <meta charset=\"UTF-8\">",
+            "  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+            "  <link rel=\"stylesheet\" href=\"style.css\">",
+            "  <title>${1:Document}</title>",
+            "</head>",
+            "<body>",
+            "  $0",
+            "  <script src=\"script.js\"></script>",
+            "</body>",
+            "</html>"
+        ],
+        "description": "HTML5 Template (! + Tab)"
+    },
+    {
+        "prefix": "link:css",
+        "body": [
+            "<link rel=\"stylesheet\" href=\"${1:style.css}\">"
+        ],
+        "description": "CSS link tag (link:css + Tab)"
+    },
+    {
+        "prefix": "link:favicon",
+        "body": [
+            "<link rel=\"icon\" href=\"${1:favicon.ico}\" type=\"image/x-icon\">"
+        ],
+        "description": "Favicon link tag (link:favicon + Tab)"
+    },
+    {
+        "prefix": "script",
+        "body": [
+            "<script>",
+            "  $0",
+            "</script>"
+        ],
+        "description": "HTML script tag (script + Tab)"
+    },
+    {
+        "prefix": "script:src",
+        "body": [
+            "<script src=\"${1:script.js}\"></script>"
+        ],
+        "description": "HTML script:src tag (script:src + Tab)"
+    },
+    {
+        "prefix": "style",
+        "body": [
+            "<style>",
+            "  $0",
+            "</style>"
+        ],
+        "description": "HTML style tag (style + Tab)"
+    },
+    {
+        "prefix": "div",
+        "body": [
+            "<div class=\" ${1:class}\">",
+            "  $0",
+            "</div>"
+        ],
+        "description": "HTML div tag (div + Tab)"
+    },
+    {
+        "prefix": "form",
+        "body": [
+            "<form action=\" ${1:#}\" method=\" ${2:get}\">",
+            "  $0",
+            "</form>"
+        ],
+        "description": "HTML form tag (form + Tab)"
+    },
+    {
+        "prefix": "img",
+        "body": [
+            "<img src=\" ${1:image.jpg}\" alt=\" ${2:description}\">"
+        ],
+        "description": "HTML img tag (img + Tab)"
+    },
+    {
+        "prefix": "p",
+        "body": [
+            "<p>",
+            "  $0",
+            "</p>"
+        ],
+        "description": "HTML p tag (p + Tab)"
+    },
+    {
+        "prefix": "button",
+        "body": [
+            "<button type=\" ${1:button}\">$0</button>"
+        ],
+        "description": "HTML button tag (button + Tab)"
+    },
+    {
+        "prefix": "input",
+        "body": [
+            "<input type=\" ${1:text}\" name=\" ${2:name}\" id=\" ${3:id}\">"
+        ],
+        "description": "HTML input tag (input + Tab)"
+    },
+    {
+        "prefix": "input:s",
+        "body": [
+            "<input type=\"submit\" value=\" ${1:Submit}\">"
+        ],
+        "description": "HTML input submit (input:s + Tab)"
+    },
+    {
+        "prefix": "input:c",
+        "body": [
+            "<input type=\"checkbox\" name=\" ${1:name}\" id=\" ${2:id}\">",
+            "<label for=\" ${2:id}\">$0</label>"
+        ],
+        "description": "HTML input checkbox (input:c + Tab)"
+    },
+    {
+        "prefix": "input:r",
+        "body": [
+            "<input type=\"radio\" name=\" ${1:name}\" id=\" ${2:id}\" value=\" ${3:value}\">",
+            "<label for=\" ${2:id}\">$0</label>"
+        ],
+        "description": "HTML input radio (input:r + Tab)"
+    },
+    {
+        "prefix": "select",
+        "body": [
+            "<select name=\" ${1:name}\" id=\" ${2:id}\">",
+            "  <option value=\" \">--Please choose an option--</option>",
+            "  $0",
+            "</select>"
+        ],
+        "description": "HTML select dropdown (select + Tab)"
+    },
+    {
+        "prefix": "table",
+        "body": [
+            "<table>",
+            "  <thead>",
+            "    <tr>",
+            "      <th>${1:Header}}</th>",
+            "    </tr>",
+            "  </thead>",
+            "  <tbody>",
+            "    <tr>",
+            "      <td>$0</td>",
+            "    </tr>",
+            "  </tbody>",
+            "</table>"
+        ],
+        "description": "HTML table (table + Tab)"
+    },
+    {
+        "prefix": "ul",
+        "body": [
+            "<ul>",
+            "  <li>$0</li>",
+            "</ul>"
+        ],
+        "description": "HTML ul/li (ul + Tab)"
+    },
+    {
+        "prefix": "a",
+        "body": [
+            "<a href=\" ${1:#}\">$0</a>"
+        ],
+        "description": "HTML anchor (a + Tab)"
+    },
+    {
+        "prefix": "h1",
+        "body": [
+            "<h1>$0</h1>"
+        ],
+        "description": "HTML H1 (h1 + Tab)"
+    },
+    {
+        "prefix": "h2",
+        "body": [
+            "<h2>$0</h2>"
+        ],
+        "description": "HTML H2 (h2 + Tab)"
+    },
+    {
+        "prefix": "h3",
+        "body": [
+            "<h3>$0</h3>"
+        ],
+        "description": "HTML H3 (h3 + Tab)"
+    },
+    {
+        "prefix": "df",
+        "body": [
+            "display: flex;"
+        ],
+        "description": "CSS display:flex (df + Tab)"
+    },
+    {
+        "prefix": "dg",
+        "body": [
+            "display: grid;"
+        ],
+        "description": "CSS display:grid (dg + Tab)"
+    },
+    {
+        "prefix": "posa",
+        "body": [
+            "position: absolute;"
+        ],
+        "description": "CSS position:absolute (posa + Tab)"
+    },
+    {
+        "prefix": "posr",
+        "body": [
+            "position: relative;"
+        ],
+        "description": "CSS position:relative (posr + Tab)"
+    },
+    {
+        "prefix": "bgc",
+        "body": [
+            "background-color: #${1:fff};"
+        ],
+        "description": "CSS background-color (bgc + Tab)"
+    },
+    {
+        "prefix": "bd",
+        "body": [
+            "border: 1px solid #${1:000};"
+        ],
+        "description": "CSS border (bd + Tab)"
+    },
+    {
+        "prefix": "w100p",
+        "body": [
+            "width: 100%;"
+        ],
+        "description": "CSS width:100% (w100p + Tab)"
+    },
+    {
+        "prefix": "h100p",
+        "body": [
+            "height: 100%;"
+        ],
+        "description": "CSS height:100% (h100p + Tab)"
+    },
+    {
+        "prefix": "m0a",
+        "body": [
+            "margin: 0 auto;"
+        ],
+        "description": "CSS margin:0 auto (m0a + Tab)"
+    },
+    {
+        "prefix": "@m",
+        "body": [
+            "@media (min-width: ${1:768px}) {",
+            "  $0",
+            "}"
+        ],
+        "description": "CSS media query (@m + Tab)"
+    },
+    {
+        "prefix": "echo",
+        "body": [
+            "<?php echo(\" ${1:string}\"); ?>"
+        ],
+        "description": "PHP echo (echo + Tab)"
+    },
+    {
+        "prefix": "foreach",
+        "body": [
+            "<?php foreach ($${1:array} as $${2:item}): ?>",
+            "  $0",
+            "<?php endforeach; ?>"
+        ],
+        "description": "PHP foreach (foreach + Tab)"
+    },
+    {
+        "prefix": "if",
+        "body": [
+            "<?php if ($${1:condition}): ?>",
+            "  $0",
+            "<?php endif; ?>"
+        ],
+        "description": "PHP if (if + Tab)"
+    }
+]
